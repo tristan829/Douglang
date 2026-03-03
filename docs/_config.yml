@@ -5,8 +5,7 @@ baseurl: "/douglang"
 remote_theme: pmarsceill/just-the-docs
 title: Douglang Documentation
 logo: assets/logo.png
-exclude:
-  - index.html
+
 markdown: kramdown
 
 navigation:
