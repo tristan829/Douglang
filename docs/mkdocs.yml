@@ -1,0 +1,8 @@
+site_name: Douglang Documentation
+docs_dir: docs
+site_dir: docs_site
+nav:
+  - 'introduction.md'
+  - 'hey_doug.md'
+  - 'variables.md'
+  - 'control_flow.md'

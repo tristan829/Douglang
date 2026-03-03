@@ -5,7 +5,7 @@ permalink: /docs/variables/
 
 # Variables
 
-Here at **Basement Technologies Inc**, we think variables are for the weak. As such, Douglang doesn't have them. In their place, we write the name of our ~~captor~~benefactor, Douglas Scott Wreden.
+Here at **Basement Technologies Inc**, we think variables are for the weak. As such, Douglang doesn't have them. In their place, we write the name of our <del>captor</del>benefactor, Douglas Scott Wreden.
 
 ```
 Doug set "goot"

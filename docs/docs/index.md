@@ -5,7 +5,7 @@ permalink: /docs/introduction/
 
 # Introduction
 
-Hello, and welcome to the documentation for Douglang, the programming language of Doug's basement. If you're caught writing anything else, you'll be arrested (This does not include [contributing to Douglang](https://github.com/tristan829/douglang) or reimplementing old smelly code in Douglang).
+Hello basement dwellers, and welcome to the documentation for Douglang, the programming language of Doug's basement. If you're caught writing anything else, you'll be arrested (This does not include [contributing to Douglang](https://github.com/tristan829/douglang) or reimplementing old smelly code in Douglang).
 
 Douglang relies on TTS, and after a grueling one hour of searching, our scientists found the voice that Doug uses for TTS. Although it (should) run on most computers, it is intended for Windows as the TTS voice is specifically a Microsoft SAPI5 voice.
 
