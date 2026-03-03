@@ -3,6 +3,8 @@ title: Douglang Documentation
 
 markdown: kramdown
 
+theme: "just-the-docs"
+
 navigation:
   - title: Introduction
     url: /docs/introduction/
