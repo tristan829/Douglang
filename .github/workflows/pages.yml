@@ -23,7 +23,7 @@ jobs:
           bundle install
 
       - name: Build Jekyll site
-        run: bundle exec jekyll build -d public
+        run: bundle exec jekyll build --source docs --destination public
 
       - name: Deploy to GitHub Pages
         uses: actions/deploy-pages@v1
