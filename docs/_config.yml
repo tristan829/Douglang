@@ -1,3 +1,6 @@
+plugins:
+  - jekyll-remote-theme
+
 baseurl: "/douglang"
 remote_theme: pmarsceill/just-the-docs
 title: Douglang Documentation
