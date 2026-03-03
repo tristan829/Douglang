@@ -1,0 +1,17 @@
+baseurl: "/douglang"
+remote_theme: pmarsceill/just-the-docs
+title: Douglang Documentation
+logo: assets/logo.png
+exclude:
+  - index.html
+markdown: kramdown
+
+navigation:
+  - title: Introduction
+    url: /docs/introduction/
+  - title: Hey Doug
+    url: /docs/hey_doug/
+  - title: Variables
+    url: /docs/variables
+  - title: Control Flow
+    url: /docs/control_flow

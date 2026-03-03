@@ -1,0 +1,9 @@
+Doug set 1
+Doug set 1
+
+loop [
+    Bald set "Next fibonacci number is " +set (Doug) tts
+    Doug set (DougDoug) +set (DougDougDoug Doug)
+    DougDoug set (DougDoug)
+    Bald DougDoug set (Doug)
+]
