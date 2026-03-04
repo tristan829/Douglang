@@ -81,7 +81,7 @@ So, you've been taught enough about variables. You know enough to understand wha
 ```
 set "Hey, Doug. "
 Doug set 42
-Doug set "The meaning of life is "
+Doug set "The answer to life, the universe, and everything is "
 Bald +set (DougDoug) +set (Doug) +set "." tts
 ```
 
