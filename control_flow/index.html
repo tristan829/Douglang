@@ -18,6 +18,7 @@
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/doug.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
@@ -121,28 +122,28 @@
 <h1 id="control-flow">Control Flow</h1>
 <p>Douglang doesn't have much control flow. Our scientists are still figuring out what "structured programming" even means. That means no functions or fancy loops. I'm sure we'll get them eventually, it's only a matter of time.</p>
 <p>But let's focus on the present, because the present is a gift, that's why it's called the present.</p>
-<p>To loop, say <code>loop</code>. Confusing, I know. Don't worry, I believe in you.</p>
-<pre><code>loop [
+<p>To loop, say <code class="language-douglang language-douglang hljs">loop</code>. Confusing, I know. Don't worry, I believe in you.</p>
+<pre><code class="language-douglang">loop [
     tts &quot;I'm going to say this forever.&quot;
 ]
 </code></pre>
-<p>Loops go forever. Why do they go forever? Because if they didn't loop, they wouldn't be a <code>loop</code>. You can end a loop with <code>break</code>:</p>
-<pre><code>loop [
+<p>Loops go forever. Why do they go forever? Because if they didn't loop, they wouldn't be a <code class="language-douglang language-douglang hljs">loop</code>. You can end a loop with <code class="language-douglang language-douglang hljs">break</code>:</p>
+<pre><code class="language-douglang">loop [
     tts &quot;What is my purpose? Just to loop? Forever?&quot;
     break // Oh, thank you.
 ]
 </code></pre>
-<p>Except now it doesn't loop and therefore doesn't deserve to be called <code>loop</code>. We can fix this with predictions. </p>
-<pre><code>prediction (Doug) = &quot;Douglas Wreden&quot; [
+<p>Except now it doesn't loop and therefore doesn't deserve to be called <code class="language-douglang language-douglang hljs">loop</code>. We can fix this with predictions. </p>
+<pre><code class="language-douglang">prediction (Doug) = &quot;Douglas Wreden&quot; [
     Believers win [
         tts &quot;Hey Doug&quot;
     ]
 ]
 </code></pre>
-<p>And, what's that? <code>=</code> is for assignment? No, This is Douglang. We use <code>set</code> for assignment. That frees up <code>=</code> for conditionals, instead of the <em>disgusting</em> and <em>vulgar</em> <code>==</code>.</p>
-<p>The <code>Believers win</code> block runs whenever the condition is true, because the Believers believe it will evaluate to true, and they won. The same would happen with a <code>Doubters win</code> block, because the Doubters believe it will evaluate to false.</p>
-<p>Combine that with <code>loop</code> and now you have a loop that doesn't go on forever. I don't know why you would want that, because loops going forever is cool.</p>
-<pre><code>// Laundry alarm
+<p>And, what's that? <code class="language-_ language-douglang hljs">=</code> is for assignment? No, This is Douglang. We use <code class="language-douglang language-douglang hljs">set</code> for assignment. That frees up <code class="language-_ language-douglang hljs">=</code> for conditionals, instead of the <em>disgusting</em> and <em>vulgar</em> <code class="language-_ language-douglang hljs">==</code>.</p>
+<p>The <code class="language-douglang language-douglang hljs">Believers win</code> block runs whenever the condition is true, because the Believers believe it will evaluate to true, and they won. The same would happen with a <code class="language-douglang language-douglang hljs">Doubters win</code> block, because the Doubters believe it will evaluate to false.</p>
+<p>Combine that with <code class="language-douglang language-douglang hljs">loop</code> and now you have a loop that doesn't go on forever. I don't know why you would want that, because loops going forever is cool.</p>
+<pre><code class="language-douglang">// Laundry alarm
 Doug set 5
 loop [
     Bald set &quot;Laundry in &quot; +set (Doug) +set &quot;.&quot; tts
@@ -168,6 +169,7 @@ tts &quot;LAUNDRY!!!!!!!&quot;
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js"></script>
+        <script src="../syntax_highlighting.js"></script>
         <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">

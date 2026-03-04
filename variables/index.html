@@ -18,6 +18,7 @@
         <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" disabled>
         <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/doug.min.js"></script>
         <script>hljs.highlightAll();</script> 
     </head>
 
@@ -120,53 +121,53 @@
 
 <h1 id="variables">Variables</h1>
 <p>Here at <strong>Basement Technologies Inc</strong>, we think variables are for the weak. As such, Douglang doesn't have them. In their place, we write the name of our <del>captor</del>benefactor, Douglas Scott Wreden.</p>
-<pre><code>Doug set &quot;goot&quot;
+<pre><code class="language-douglang">Doug set &quot;goot&quot;
 </code></pre>
 <p>Let's explain that code block. At first glance, it might look like variables. Trust me, it's not. What this is actually doing is indexing a signed array and setting its value to "goot". Yes, you read that right: a signed array. Our scientists were hard at work finding a solution to the modern problem of variables, and this is what they made.</p>
-<p>So, what the hell even is a signed array? Well, you know how arrays are indexed like <code>my_array[i]</code>? Well, we thought that it's kinda stupid for indices to only be positive (unsigned). So we poured all of our channel points into developing a new array with negative indices. That means <code>array[-10]</code> is correct. However, Douglang doesn't use that <em>old</em>, <em>smelly</em>, <em>decrepit</em> syntax. Instead, you use <strong><em>Doug Notation</em></strong>! Cue applause.</p>
-<p>Doug Notation is really quite simple. You write <code>Doug</code>. That's it.</p>
+<p>So, what the hell even is a signed array? Well, you know how arrays are indexed like <code class="language-_ language-douglang hljs">my_array[i]</code>? Well, we thought that it's kinda stupid for indices to only be positive (unsigned). So we poured all of our channel points into developing a new array with negative indices. That means <code class="language-_ language-douglang hljs">array[-10]</code> is correct. However, Douglang doesn't use that <em>old</em>, <em>smelly</em>, <em>decrepit</em> syntax. Instead, you use <strong><em>Doug Notation</em></strong>! Cue applause.</p>
+<p>Doug Notation is really quite simple. You write <code class="language-douglang language-douglang hljs">Doug</code>. That's it.</p>
 <p>So:</p>
-<pre><code>Doug
+<pre><code class="language-douglang">Doug
 </code></pre>
 <p>What index is that? It's obviously 1. Because there's only one Doug.</p>
-<p>Doug Notation is similar to Brainfuck's <code>&lt;</code> and <code>&gt;</code>. Don't worry, it's very simple. It only has three rules.</p>
+<p>Doug Notation is similar to Brainfuck's <code class="language-_ language-douglang hljs">&lt;</code> and <code class="language-_ language-douglang hljs">&gt;</code>. Don't worry, it's very simple. It only has three rules.</p>
 <ol>
 <li>
-<p><strong>Chained Dougs:</strong> Jump count, in powers of two. <code>Doug</code> is 1, <code>DougDoug</code> is 2, <code>DougDougDoug</code> is 4, <code>DougDougDougDoug</code> is 8, and so on.</p>
+<p><strong>Chained Dougs:</strong> Jump count, in powers of two. <code class="language-douglang language-douglang hljs">Doug</code> is 1, <code class="language-douglang language-douglang hljs">DougDoug</code> is 2, <code class="language-douglang language-douglang hljs">DougDougDoug</code> is 4, <code class="language-douglang language-douglang hljs">DougDougDougDoug</code> is 8, and so on.</p>
 </li>
 <li>
 <p><strong>Sequences:</strong> Sequences of Doug Chains combine with each other. They are separated by whitespace.</p>
 </li>
 <li>
-<p><strong>Even and Odd Chains:</strong> Sequences count the number of chains they have. The sequence <code>DougDoug Doug</code> has two chains, for instance. And in that sequence, <code>DougDoug</code> is an odd chain as it is the 1st chain in the sequence, and <code>Doug</code> is an even chain as it is the second chain.</p>
+<p><strong>Even and Odd Chains:</strong> Sequences count the number of chains they have. The sequence <code class="language-douglang language-douglang hljs">DougDoug Doug</code> has two chains, for instance. And in that sequence, <code class="language-douglang language-douglang hljs">DougDoug</code> is an odd chain as it is the 1st chain in the sequence, and <code class="language-douglang language-douglang hljs">Doug</code> is an even chain as it is the second chain.</p>
 <ul>
 <li>Odd chains: Perform addition.</li>
 <li>Even chains: Perform subtraction.</li>
 </ul>
-<p>So, <code>DougDoug Doug</code> performs <code>+ 2 - 1</code> on the index. Or, more simply, is equivalent to just writing <code>Doug</code>.</p>
+<p>So, <code class="language-douglang language-douglang hljs">DougDoug Doug</code> performs <code class="language-_ language-douglang hljs">+ 2 - 1</code> on the index. Or, more simply, is equivalent to just writing <code class="language-douglang language-douglang hljs">Doug</code>.</p>
 </li>
 </ol>
 <p>Simple, right? With that in mind, getting to 11:</p>
-<pre><code>DougDougDougDougDoug // 16
+<pre><code class="language-douglang">DougDougDougDougDoug // 16
 DougDougDoug // -4. Now at 12
 Doug // 1. Now at 13
 DougDoug // -2. Now at 11
 </code></pre>
-<p>And if you want to reset the index back to 0: <code>Bald</code>. Simple, right? That's how you access variables. But how do you use them?</p>
-<pre><code>set &quot;goot&quot;
+<p>And if you want to reset the index back to 0: <code class="language-douglang language-douglang hljs">Bald</code>. Simple, right? That's how you access variables. But how do you use them?</p>
+<pre><code class="language-douglang">set &quot;goot&quot;
 </code></pre>
 <p>The set keyword sets the value at the current index. Paired with Doug Notation:</p>
-<pre><code>Bald set &quot;goot&quot;
+<pre><code class="language-douglang">Bald set &quot;goot&quot;
 </code></pre>
-<p>That sets the 0th index's value to <code>"goot"</code>. Because <code>set</code> overrides the previous value, there are other <code>set</code> keywords that simply change it. They are:</p>
+<p>That sets the 0th index's value to <code class="language-douglang language-douglang hljs">"goot"</code>. Because <code class="language-douglang language-douglang hljs">set</code> overrides the previous value, there are other <code class="language-douglang language-douglang hljs">set</code> keywords that simply change it. They are:</p>
 <ul>
-<li><code>+set</code></li>
-<li><code>-set</code></li>
-<li><code>*set</code></li>
-<li><code>/set</code></li>
-<li><code>%set</code></li>
+<li><code class="language-douglang language-douglang hljs">+set</code></li>
+<li><code class="language-douglang language-douglang hljs">-set</code></li>
+<li><code class="language-douglang language-douglang hljs">*set</code></li>
+<li><code class="language-douglang language-douglang hljs">/set</code></li>
+<li><code class="language-douglang language-douglang hljs">%set</code></li>
 </ul>
-<p>Note, these do not work like <code>+</code>, <code>-</code>, etc in other languages. They work exactly like <code>set</code>, except instead of overwriting the value stored at the index, they perform an operation on it. And, that's everything about variables. Or, actually, I'm getting word from the technicians at <strong>Basement Technologies Inc</strong> that there's actually one thing left: Doug Expressions.</p>
+<p>Note, these do not work like <code class="language-_ language-douglang hljs">+</code>, <code class="language-_ language-douglang hljs">-</code>, etc in other languages. They work exactly like <code class="language-douglang language-douglang hljs">set</code>, except instead of overwriting the value stored at the index, they perform an operation on it. And, that's everything about variables. Or, actually, I'm getting word from the technicians at <strong>Basement Technologies Inc</strong> that there's actually one thing left: Doug Expressions.</p>
 <p>Doug Expressions look exactly like regular Doug Notation, with two differences:</p>
 <ol>
 <li>They're in parenthesis</li>
@@ -175,15 +176,15 @@ DougDoug // -2. Now at 11
 <li>And evaluate to the value stored at that index</li>
 </ol>
 <p><small>And yes, that's definitely two differences. Don't let the numbers fool you.</small></p>
-<p>So, if you were to store something in index 2, you can say either <code>DougDoug tts</code> to move the index to 2 and tts, but that's unreliable if the index isn't already close to 2, or you want to keep the index pointer where it is. So, instead, you can say <code>tts (DougDoug)</code> which <em>always</em> evaluates to whatever is stored at <code>DougDoug</code>.    </p>
+<p>So, if you were to store something in index 2, you can say either <code class="language-douglang language-douglang hljs">DougDoug tts</code> to move the index to 2 and tts, but that's unreliable if the index isn't already close to 2, or you want to keep the index pointer where it is. So, instead, you can say <code class="language-douglang language-douglang hljs">tts (DougDoug)</code> which <em>always</em> evaluates to whatever is stored at <code class="language-douglang language-douglang hljs">DougDoug</code>.    </p>
 <hr />
 <p>So, you've been taught enough about variables. You know enough to understand what this does!</p>
-<pre><code>set &quot;Hey, Doug. &quot;
+<pre><code class="language-douglang">set &quot;Hey, Doug. &quot;
 Doug set 42
 Doug set &quot;The answer to life, the universe, and everything is &quot;
 Bald +set (DougDoug) +set (Doug) +set &quot;.&quot; tts
 </code></pre>
-<p>Also, make sure you count properly. Douglang has an irrational fear of people not knowing how to count. This means before you store something at index 4, something has to be at index 3, and so on. Same for negative indices. So, no <code>DougDougDoug</code> before you have something at <code>DougDoug Doug</code>.</p></div>
+<p>Also, make sure you count properly. Douglang has an irrational fear of people not knowing how to count. This means before you store something at index 4, something has to be at index 3, and so on. Same for negative indices. So, no <code class="language-douglang language-douglang hljs">DougDougDoug</code> before you have something at <code class="language-douglang language-douglang hljs">DougDoug Doug</code>.</p></div>
             </div>
         </div>
 
@@ -197,6 +198,7 @@ Bald +set (DougDoug) +set (Doug) +set &quot;.&quot; tts
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../js/base.js"></script>
+        <script src="../syntax_highlighting.js"></script>
         <script src="../search/main.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
