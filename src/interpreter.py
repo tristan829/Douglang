@@ -134,13 +134,11 @@ class Interpreter:
                     raise Break()
         
                 case PredictionNode():
-                    print("\n")
-                    self.print_state()
+                    # print("\n")
+                    # self.print_state()
                     if self.eval_condition(node.condition):
-                        print("true")
                         self.interpret_block(node.believers_body)
                     else:
-                        print("false")
                         self.interpret_block(node.doubters_body)
                 
                 case _:
