@@ -27,7 +27,7 @@ jobs:
           python-version: 3.13
 
       - name: Install dependencies
-        run: pip install mkdocs
+        run: pip install mkdocs pymdown-extension
 
       - name: Build site
         run: mkdocs build
