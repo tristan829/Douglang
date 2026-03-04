@@ -9,21 +9,21 @@ Douglang doesn't have much control flow. Our scientists are still figuring out w
 
 But let's focus on the present, because the present is a gift, that's why it's called the present.
 
-To loop, say `loop`. Confusing, I know. Don't worry, I believe in you.
-```
+To loop, say `#!douglang loop`. Confusing, I know. Don't worry, I believe in you.
+```douglang
 loop [
     tts "I'm going to say this forever."
 ]
 ```
-Loops go forever. Why do they go forever? Because if they didn't loop, they wouldn't be a `loop`. You can end a loop with `break`:
-```
+Loops go forever. Why do they go forever? Because if they didn't loop, they wouldn't be a `#!douglang loop`. You can end a loop with `#!douglang break`:
+```douglang
 loop [
     tts "What is my purpose? Just to loop? Forever?"
     break // Oh, thank you.
 ]
 ```
-Except now it doesn't loop and therefore doesn't deserve to be called `loop`. We can fix this with predictions. 
-```
+Except now it doesn't loop and therefore doesn't deserve to be called `#!douglang loop`. We can fix this with predictions. 
+```douglang
 prediction (Doug) = "Douglas Wreden" [
     Believers win [
         tts "Hey Doug"
@@ -32,13 +32,13 @@ prediction (Doug) = "Douglas Wreden" [
 ```
 
 
-And, what's that? `=` is for assignment? No, This is Douglang. We use `set` for assignment. That frees up `=` for conditionals, instead of the *disgusting* and *vulgar* `==`.
+And, what's that? `#!_ =` is for assignment? No, This is Douglang. We use `#!douglang set` for assignment. That frees up `#!_ =` for conditionals, instead of the *disgusting* and *vulgar* `#!_ ==`.
 
-The `Believers win` block runs whenever the condition is true, because the Believers believe it will evaluate to true, and they won. The same would happen with a `Doubters win` block, because the Doubters believe it will evaluate to false.
+The `#!douglang Believers win` block runs whenever the condition is true, because the Believers believe it will evaluate to true, and they won. The same would happen with a `#!douglang Doubters win` block, because the Doubters believe it will evaluate to false.
 
-Combine that with `loop` and now you have a loop that doesn't go on forever. I don't know why you would want that, because loops going forever is cool.
+Combine that with `#!douglang loop` and now you have a loop that doesn't go on forever. I don't know why you would want that, because loops going forever is cool.
 
-```
+```douglang
 // Laundry alarm
 Doug set 5
 loop [
