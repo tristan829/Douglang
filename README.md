@@ -8,7 +8,7 @@ A programming language based on that one pepper guy who solves problems no-one h
 
 # Learn
 
-There's documentation. It's in this repo. Go find it, it's under `docs/`. If you want to write Douglang code, you *have* to read it given the eccentric features. Go on, it won't bite.
+There's documentation. If you want to write Douglang code, you *have* to read it given the eccentric features. Go on, it won't bite.
 
 # Features
 
