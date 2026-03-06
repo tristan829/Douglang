@@ -2,7 +2,7 @@
 
 **Certified Language of the Basement 2026**
 
-A programming language based on that one pepper guy who solves problems no-one has. It's somewhere between being usable and being esoteric, and just like Doug, it hates ***you*** specifically.
+A programming language based on [that one pepper guy](https://youtube.com/@DougDoug) who solves problems no-one has. It's somewhere between being usable and being esoteric, and just like Doug, it hates ***you*** specifically.
 
 > Not actually affiliated with DougDoug.
 
