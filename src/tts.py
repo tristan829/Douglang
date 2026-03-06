@@ -1,4 +1,6 @@
 import ctypes
+from pathlib import Path
+import sys
 import pyttsx3
 import pygame
 import wave
@@ -20,19 +22,20 @@ class TTS:
         self._amplitude = 0.0
         self.speaking = False
         self.can_use_geraint_voice = False
-        try:
-            for dll in DLLS:
-                ctypes.WinDLL(os.path.join(S2G_PATH, dll))
-    
-            # Initialize engine and check for Geraint voice
-            engine = pyttsx3.init()
-            self.can_use_geraint_voice = any("Geraint" in v.name for v in engine.getProperty('voices'))
-    
-        except Exception as e:
-            print(f"Error loading Geraint voice: {e}")
-            return False
+        if sys.platform.startswith("win") and Path(S2G_PATH).is_dir():
+            try:
+                for dll in DLLS:
+                    ctypes.WinDLL(os.path.join(S2G_PATH, dll))
+        
+                # Initialize engine and check for Geraint voice
+                engine = pyttsx3.init()
+                self.can_use_geraint_voice = any("Geraint" in v.name for v in engine.getProperty('voices'))
+        
+            except Exception as e:
+                print(f"Error loading Geraint voice: {e}")
+                return False
         if not self.can_use_geraint_voice:
-            print("Could not find Geraint voice.")
+            print("Could not use Geraint voice.")
 
     def speak(self, text: str):
         self.current_text = text
